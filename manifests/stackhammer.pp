@@ -1,0 +1,3 @@
+node somenode {
+  include 'somerole'
+}

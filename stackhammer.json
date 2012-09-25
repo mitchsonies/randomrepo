@@ -1,0 +1,34 @@
+{
+  "metaVersion": "1.1.6",
+  "accessKey": "cloudsmith",
+  "puppetVersion": "PUPPET27",
+  "environments": [
+    {
+      "siteLocation": "manifests",
+      "moduleLocations": [
+        "modules"
+      ],
+      "nodes": [
+        {
+          "type": "T1_MICRO",
+          "deployState": "RUNNING",
+          "image": "ami-a0cd60c9",
+          "role": "somerole",
+          "name": "somenode"
+        }
+      ],
+      "name": "production"
+    }
+  ],
+  "tests": [
+    {
+      "rakeFile": "Rakefile",
+      "rakeTask": "setup_ci_reporter",
+      "reformatResults": true,
+      "outputs": [],
+      "name": "sometest"
+    }
+  ],
+  "puppetLintEnabled": true,
+  "puppetLintOptions": []
+}
